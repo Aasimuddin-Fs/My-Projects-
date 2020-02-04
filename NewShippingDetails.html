@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>E-Commerce | Shipping Details</title>
+<style>
+    input[type=text],
+    select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid green;
+        border-radius: 20px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    label {
+        font-family: inherit;
+        color: darkblue;
+        font-size: 15px;
+    }
+
+    img {
+        /*align-content: center;*/
+        height: 15%;
+        width: 15%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=submit] {
+        width: 10%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 20px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 8px;
+
+        text-align: center;
+    }
+</style>
+
+<body>
+    <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbQmdiWIrpH8nhE883BTDGSshVUh8vViXs0XCxQpN_xneNq2sz">
+
+    <div>
+        <form method="POST" action="/submit">
+            <label id="ProductName" for="ProductName">Product Name</label>
+            <select id="ProductName" name="ProductName">
+                <option>Chair</option>
+                <option>Bag</option>
+                <option>Mobile</option>
+                <option>Apple</option>
+                <option>Laptop</option>
+                <option>Headphone</option>
+                <option>Bed</option>
+                <option>Mouse</option>
+                <option>Charger</option>
+                <option>Mobile case</option>
+            </select>
+            <br>
+           
+    </div>
+    <div class="form-group col-md-6">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" placeholder="FirstName" name="FirstName">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" placeholder="LastName" name="LastName" >
+    </div>
+    <div class="form-group">
+        <label for="inputContactNo">Contact Number</label>
+        <input type="text" class="form-control" id="inputContactNo" name="inputContactNo" placeholder="+91-xxxxxxxxxx">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" name="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <input type="text" class="form-control" id="inputState" name="inputState" placeholder="State">
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="inputZip">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Please Confirm the details
+            </label>
+            <br>
+            <input type="submit" value="Book" >
+            </form>
+
+        </div>
+
+
+</body>
+</html>
